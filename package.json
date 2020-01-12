@@ -1,0 +1,24 @@
+{
+  "name": "basic-typescript-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "internal_run-node": "node dist/app.js",
+    "internal_watch-node": "nodemon dist/app.js",
+    "internal_build-ts": "tsc",
+    "internal_watch-ts": "tsc -w",
+    "build": "npm run internal_build-ts && npm run internal_watch-ts",
+    "watch_debug": "concurrently -k -p \"[{name}]\" --names \"Typescript,NodeTS\" -c \"cyan.bold,green.bold\" \"npm run internal_watch-ts\" \"npm run internal_watch-node\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^2.0.2",
+    "ts-node": "^8.6.1",
+    "typescript": "^3.7.4"
+  }
+}
