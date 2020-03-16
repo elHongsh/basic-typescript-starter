@@ -6,7 +6,7 @@ This project is a template project for typescript.
 
 Open your terminal and write down below.
 
-`git clone https://qnix95@bitbucket.org/qnix95/basic-typescript-starter [YOUR PROJECT NAME]`
+`git clone https://bitbucket.org/qnix95/basic-typescript-starter [YOUR PROJECT NAME]`
 
 ## Features
 
